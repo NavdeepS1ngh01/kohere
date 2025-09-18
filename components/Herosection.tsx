@@ -21,7 +21,7 @@ export default function Herosection() {
               <br></br>we craft tools that supercharge your team and wow your
               users.
             </p>
-            <p className="herosection-cta">Let's Build Something Great</p>
+            <p className="herosection-cta">Let&apos;s Build Something Great</p>
           </div>
           <div className="herosection-invite">
             <input
