@@ -10,14 +10,14 @@ export default function Herosection() {
         <section className="herosection patrick-hand-regular">
           <div className="herosection-content">
             <h1 className="herosection-headline">
-              Tailored Tech Solutions That Drive{" "}
+              Tailored Tech Solutions That Drive
               <span className="herosection-headline-underline">
                 Real Growth
               </span>
             </h1>
 
             <p className="herosection-subheadline">
-              From cutting-edge web apps to intuitive mobile experiences,{" "}
+              From cutting-edge web apps to intuitive mobile experiences,
               <br></br>we craft tools that supercharge your team and wow your
               users.
             </p>
