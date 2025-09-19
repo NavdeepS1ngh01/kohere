@@ -38,6 +38,8 @@ export default function Herosection() {
           <Image
             src="/hero-image.png"
             alt="Screenshot of Visual Studio Code Workspace"
+            width={420}
+            height={420}
           />
         </div>
       </div>

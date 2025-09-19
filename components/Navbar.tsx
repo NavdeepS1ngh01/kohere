@@ -7,7 +7,7 @@ export default function Navbar() {
     <>
     <div className="navbar patrick-hand-regular">
       <div className="navbar-logo">
-        <h1>Koherent Limited</h1>
+        <h1>Kohere Limited</h1>
       </div>
       <div className="navbar-links">
         <a href="/about">About</a>
