@@ -1,5 +1,6 @@
-'use client'
+'use client';
 import { useRouter, usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 export default function Navbar() {
   const router = useRouter();
@@ -17,9 +18,9 @@ export default function Navbar() {
           <h1>Kohere</h1>
         </div>
         <div className="navbar-links patrick-hand-regular">
-          <a href="/" className={pathname === '/' ? 'active' : ''}>Home</a>
-          <a href="/about" className={pathname === '/about' ? 'active' : ''}>About</a>
-          <a href="/project" className={pathname === '/project' ? 'active' : ''}>Projects</a>
+          <Link href="/" className={pathname === '/' ? 'active' : ''}>Home</Link>
+          <Link href="/about" className={pathname === '/about' ? 'active' : ''}>About</Link>
+          <Link href="/project" className={pathname === '/project' ? 'active' : ''}>Projects</Link>
         </div>
         <div className="navbar-button-container">
           <button className="border-2 border-black navbar-button" onClick={handleClick}>Contact Us</button>
