@@ -1,6 +1,8 @@
 import "./globals.css";
 
 import { Patrick_Hand } from 'next/font/google';
+import "@radix-ui/themes/styles.css";
+import { Theme } from "@radix-ui/themes";
 
 const patrickHand = Patrick_Hand({ 
   subsets: ['latin'], 
@@ -14,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Theme>
+        {children}
+        </Theme>
+        </body>
     </html>
   );
 }

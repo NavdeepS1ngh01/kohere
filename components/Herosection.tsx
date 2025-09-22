@@ -1,19 +1,25 @@
 "use client";
-import Image from "next/image";
+
+import { useState } from "react";
+
 export default function Herosection() {
-  // function handleClick(e: React.MouseEvent<HTMLButtonElement>) {
-  //   e.preventDefault();
-  // }
+  const [heading, setHeading] = useState("web");
+
+  function handleHeadingSelect(event: React.MouseEvent<HTMLParagraphElement>) {
+    const selectedHeading = event.currentTarget.dataset.value;
+    if (selectedHeading) {
+      setHeading(selectedHeading);
+    }
+  }
+
   return (
     <>
       <div className="herosection-container">
         <section className="herosection patrick-hand-regular">
           <div className="herosection-content">
             <h1 className="herosection-headline">
-              Tailored Tech Solutions That Drive
-              <span className="herosection-headline-underline">
-                Real Growth
-              </span>
+              Tailored Tech Solutions <br></br>
+              That Drive Real Growth
             </h1>
 
             <p className="herosection-subheadline">
@@ -21,7 +27,6 @@ export default function Herosection() {
               <br></br>we craft tools that supercharge your team and wow your
               users.
             </p>
-            <p className="herosection-cta">Let&apos;s Build Something Great</p>
           </div>
           <div className="herosection-invite">
             <input
@@ -34,14 +39,54 @@ export default function Herosection() {
             </button>
           </div>
         </section>
-        <div className="herosection-image">
-          <Image
-            src="/hero-image.png"
-            alt="Screenshot of Visual Studio Code Workspace"
-            width={420}
-            height={420}
-          />
-        </div>
+        <section className="herosection-right">
+          <section className="left-card">
+          <div className="card-container">
+            <div className="card-heading">In-process</div>
+            <div className="card-content">
+              <img
+                src="/hero-section-image.png"
+                className="contentinfo-image"
+              ></img>
+              <div className="card-contentinfo">
+                <p className="contentinfo-name">Wilson Wong</p>
+                <p className="contentinfo-title">Hong Kong Accounting Firm</p>
+                <p className="contentinfo-progress">In progress</p>
+              </div>
+            </div>
+          </div>
+          </section>
+         <section className="right-card">
+          <div className="card-container">
+            <div className="card-heading">Cathay's Cupcakes</div>
+            <div className="card-content">
+              <img
+                src="/hero-section-image2.png"
+                className="contentinfo-image"
+              ></img>
+              <div className="card-contentinfo">
+                <p className="contentinfo-name">Cathy Lee</p>
+                <p className="contentinfo-title">Hong Kong Homemade Bakery</p>
+                <p className="contentinfo-progress">Completed</p>
+              </div>
+            </div>
+          </div>
+          <div className="card-container">
+            <div className="card-heading">Charles Consultation Limited</div>
+            <div className="card-content">
+              <img
+                src="/hero-section-image3.png"
+                className="contentinfo-image"
+              ></img>
+              <div className="card-contentinfo">
+                <p className="contentinfo-name">Charles & co.</p>
+                <p className="contentinfo-title">Foreign Consulting Firm</p>
+                <p className="contentinfo-progress">Completed</p>
+              </div>
+            </div>
+          </div>
+          </section>
+        </section>
       </div>
     </>
   );
