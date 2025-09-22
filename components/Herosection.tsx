@@ -39,8 +39,8 @@ export default function Herosection() {
                 <Image
                   src="/hero-section-image.png"
                   alt="Wilson Wong project"
-                  width={300}
-                  height={200}
+                  width={80}
+                  height={75}
                   className="contentinfo-image"
                 />
                 <div className="card-contentinfo">
@@ -59,8 +59,8 @@ export default function Herosection() {
                 <Image
                   src="/hero-section-image2.png"
                   alt="Cathy Lee project"
-                  width={300}
-                  height={200}
+                  width={80}
+                  height={75}
                   className="contentinfo-image"
                 />
                 <div className="card-contentinfo">
@@ -77,8 +77,8 @@ export default function Herosection() {
                 <Image
                   src="/hero-section-image3.png"
                   alt="Charles & co. project"
-                  width={300}
-                  height={200}
+                  width={80}
+                  height={75}
                   className="contentinfo-image"
                 />
                 <div className="card-contentinfo">
