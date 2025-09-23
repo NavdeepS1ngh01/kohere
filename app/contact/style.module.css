@@ -1,30 +1,129 @@
-.contact-container{
-    height: 100vh;
-}
-.contactForm{
-    display: flex;
-    flex-direction: column;
-}
-
-.formContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    font-size: 1.25rem;
-}
-.formContainer button{
-    font-size: 1.5rem;
-}
-.formTextarea{
-    border: 1.5px solid black;
-    border-radius:0.5rem;
-    padding: 1rem;
-    margin-top: 0.5rem;
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  gap: 4rem;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: auto;
 }
 
-.inputArea{
-    border: 1.5px solid black;
-    border-radius:0.5rem;
+.contactLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  flex: 1;
+  min-width: 300px;
+}
+
+.contactOptions {
+  background-color: #f9f9f9;
+  padding: 1.25rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+}
+
+.contactHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contactIcon {
+  font-size: 1.5rem;
+  color: #f97316;
+}
+
+.contactRight {
+  flex: 1.2;
+  min-width: 400px;
+  background-color: #bbf451;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.contactFormHeading {
+  margin-bottom: 2rem;
+}
+
+.headingOne {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.headingTwo {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputStyle {
+  padding: 0.75rem;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.inputStyle:focus,
+.inputTextArea:focus {
+  outline: none;
+  border-color: black;
+}
+
+.inputTextArea {
+  padding: 0.75rem;
+  border: 2px solid black;
+  background-color: transparent;
+  font-size: 1rem;
+  opacity: 0.9;
+  resize: none;
+  min-height: 100px;
+}
+
+.checkboxInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.checkboxInputs div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contactButton {
+  background-color: orange;
+  color: white;
+  padding: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contactButton:hover {
+  cursor: pointer;
+  background-color: #ffa733;
 }
