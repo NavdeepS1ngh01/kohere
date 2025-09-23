@@ -1,5 +1,6 @@
 "use client";
 import { IoIosCheckboxOutline } from "react-icons/io";
+import { motion } from "motion/react"
 
 const servicesData = [
   {
@@ -53,7 +54,7 @@ export default function Services() {
       </div>
       <div className="services-grid">
         {servicesData.map((service, index) => (
-          <div key={index} className="service-card">
+          <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3, ease: "easeOut", delay: 0.05 }} key={index} className="service-card">
             <div className="service-info">
               <h3 className="info-heading">{service.title}</h3>
               <p className="info-description">{service.description}</p>
@@ -68,7 +69,7 @@ export default function Services() {
                 ))}
               </ul>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

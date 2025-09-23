@@ -31,7 +31,7 @@ export default function Herosection() {
           </div>
         </section>
             <div className="card-container">
-              <div className="card-heading">In-process</div>
+              <div className="card-heading">Wong Accounting Limited - Webapp </div>
               <div className="card-content">
                 <Image
                   src="/hero-section-image.png"
