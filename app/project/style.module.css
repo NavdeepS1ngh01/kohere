@@ -1,15 +1,18 @@
+.pageWrapper {
+  min-height: calc(100vh - 120px); /* Adjust based on Navbar + Footer height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.projectContainer {
+  font-size: 2rem;
+  text-align: center;
+}
+
 .patrick-hand-regular {
   font-family: "Patrick Hand", cursive;
   font-weight: 400;
   font-style: normal;
-}
-
-.projectContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 2rem;
-    max-height: 100vh;
-    font-size: 2rem;
 }

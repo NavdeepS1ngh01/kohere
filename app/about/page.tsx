@@ -1,36 +1,38 @@
-// src/app/about/page.tsx
-'use client'
+'use client';
 
-import Image from 'next/image'
-import Navbar from '@/components/Navbar'
-import { peopleData } from '@/lib/people'
+import styles from './style.module.css';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
-export default function About(){
+export default function About() {
   return (
     <>
       <Navbar />
-      <section className={`patrick-hand-regular about-herosection`}>
-        <h1>About Us</h1>
-        <p>Hong Kong based software development company</p>
-      </section>
-      <section className={`patrick-hand-regular about-teamsection`}>
-        <p>Meet our team!</p>
-        <div className="team-member">
-          {peopleData.map(person => (
-            <div key={person.id} className="member-card">
-              <Image
-                src={person.src}
-                alt={`Image of ${person.name}`}
-                width={100}
-                height={100}
-              />
-              <p>{person.name}</p>
-              <p>{person.title}</p>
-              <p>{person.bio}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <main className={styles.container}>
+        <section className={styles.introSection}>
+          <h1 className={styles.heading}>Meet the Koherent Team</h1>
+          <p className={styles.subheading}>We take pride in delivering</p>
+          <p className={styles.highlight}>Exceptional results</p>
+          <p className={styles.description}>
+            Kohere Limited is a technology consultancy based in Hong Kong, dedicated to building digital solutions that drive growth and innovation.
+          </p>
+          <button className={styles.ctaButton}>Join Our Team</button>
+        </section>
+
+        <section className={styles.teamSection}>
+          <div className={styles.teamCard}>
+            <img src="/navdeep.jpg" alt="Navdeep Singh" className={styles.avatar} />
+            <p className={styles.name}>Navdeep Singh</p>
+            <p className={styles.role}>Founder</p>
+          </div>
+          <div className={styles.teamCard}>
+            <img src="/rajpreet.jpg" alt="Rajpreet Singh" className={styles.avatar} />
+            <p className={styles.name}>Rajpreet Singh</p>
+            <p className={styles.role}>Founder</p>
+          </div>
+        </section>
+      </main>
+      <Footer />
     </>
-  )
+  );
 }

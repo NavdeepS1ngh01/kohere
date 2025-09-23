@@ -17,7 +17,7 @@ export default function Contact() {
               <IoChatboxEllipsesOutline className={styles.contactIcon} />
               <p>Chat with us</p>
             </div>
-            <p>Our support team is available 24/7 to assist you.</p>
+            <p>Our support team is available 24/7 to assist you. <b>koherentlimited@gmail.com</b></p>
           </div>
 
           <div className={styles.contactOptions}>
@@ -34,7 +34,7 @@ export default function Contact() {
               <p>Call us</p>
             </div>
             <p>Available Mon&ndash;Fri, 9am to 5pm</p>
-            <p>+852 5409 0400</p>
+            <p>+852 5409 1111</p>
           </div>
         </div>
 
