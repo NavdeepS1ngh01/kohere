@@ -30,11 +30,8 @@ export default function Herosection() {
             </button>
           </div>
         </section>
-
-        <section className="herosection-right">
-          <section className="left-card">
             <div className="card-container">
-              <div className="card-heading">In-process</div>
+              <div className="card-heading">Wong Accounting Limited - Webapp </div>
               <div className="card-content">
                 <Image
                   src="/hero-section-image.png"
@@ -50,46 +47,6 @@ export default function Herosection() {
                 </div>
               </div>
             </div>
-          </section>
-
-          <section className="right-card">
-            <div className="card-container">
-              <div className="card-heading">Cathay&apos;s Cupcakes</div>
-              <div className="card-content">
-                <Image
-                  src="/hero-section-image2.png"
-                  alt="Cathy Lee project"
-                  width={80}
-                  height={75}
-                  className="contentinfo-image"
-                />
-                <div className="card-contentinfo">
-                  <p className="contentinfo-name">Cathy Lee</p>
-                  <p className="contentinfo-title">Hong Kong Homemade Bakery</p>
-                  <p className="contentinfo-progress">Completed</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="card-container">
-              <div className="card-heading">Charles Consultation Limited</div>
-              <div className="card-content">
-                <Image
-                  src="/hero-section-image3.png"
-                  alt="Charles & co. project"
-                  width={80}
-                  height={75}
-                  className="contentinfo-image"
-                />
-                <div className="card-contentinfo">
-                  <p className="contentinfo-name">Charles & co.</p>
-                  <p className="contentinfo-title">Foreign Consulting Firm</p>
-                  <p className="contentinfo-progress">Completed</p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </section>
       </div>
     </>
   );

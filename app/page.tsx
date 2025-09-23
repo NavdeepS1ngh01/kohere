@@ -1,3 +1,4 @@
+import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import Herosection from "@/components/Herosection";
 import Navbar from "@/components/Navbar";
@@ -10,6 +11,7 @@ export default function Home() {
     <Navbar></Navbar>
     <Herosection></Herosection>
     <Services></Services>
+    <CTA></CTA>
     <Footer></Footer>
     </>
   );
